@@ -1,0 +1,68 @@
+/*=============== ANALYZE ===============*/
+/* LOGO SIZE (10x): 320 x 480 */
+/* ELEMENT SIZE (10x): 160px */
+
+:root {
+  /* SIZE */
+  --element-size: 160px;
+  --element-radius: calc(var(--element-size) / 2);
+
+  /* COLOR */
+  --color-1: #f24e1e;
+  --color-2: #ff7262;
+  --color-3: #a259ff;
+  --color-4: #1abcfe;
+  --color-5: #0acf83;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*=============== WRAPPER ===============*/
+
+.logo {
+  width: 320px;
+  height: 480px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*=============== DETAIL ===============*/
+
+.element {
+  width: var(--element-size);
+  height: var(--element-size);
+}
+
+.element-1 {
+  border-top-left-radius: var(--element-radius);
+  border-bottom-left-radius: var(--element-radius);
+  background-color: var(--color-1);
+}
+.element-2 {
+  border-top-right-radius: var(--element-radius);
+  border-bottom-right-radius: var(--element-radius);
+  background-color: var(--color-2);
+}
+.element-3 {
+  border-top-left-radius: var(--element-radius);
+  border-bottom-left-radius: var(--element-radius);
+  background-color: var(--color-3);
+}
+.element-4 {
+  border-radius: var(--element-radius);
+  background-color: var(--color-4);
+}
+.element-5 {
+  border-top-left-radius: var(--element-radius);
+  border-bottom-left-radius: var(--element-radius);
+  border-bottom-right-radius: var(--element-radius);
+  background-color: var(--color-5);
+}
